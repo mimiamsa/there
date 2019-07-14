@@ -1,0 +1,39 @@
+@import "./variables.scss";
+
+.nav-bar {
+  width: 100%;
+  padding: .5rem 2rem;
+  border-bottom: 1px solid $lightGrey;
+  background: white;
+}
+
+
+.nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 900;
+  margin-right: 2.3rem;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.nav-side {
+  display: flex;
+  align-items: baseline;
+}
+
+.nav-item {
+  font-size: 1.1rem;
+  color: black;
+  transition: color .2s ease-in;
+  &:hover {
+    color: $green;
+  }
+}

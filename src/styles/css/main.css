@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,400,500,700,900|Source+Sans+Pro:300,400,700,900&display=swap");
+ul, li {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.nav-bar {
+  width: 100%;
+  padding: .5rem 2rem;
+  border-bottom: 1px solid #F8F9FA;
+  background: white; }
+
+.nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between; }
+
+.nav-logo {
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 900;
+  margin-right: 2.3rem; }
+  .nav-logo:hover {
+    color: black; }
+
+.nav-side {
+  display: flex;
+  align-items: baseline; }
+
+.nav-item {
+  font-size: 1.1rem;
+  color: black;
+  transition: color .2s ease-in; }
+  .nav-item:hover {
+    color: #0CDCB0; }
+
+button.btn-prems {
+  cursor: pointer;
+  border: 1px solid #0CDCB0;
+  background: white;
+  color: #0CDCB0;
+  padding: .5rem 1rem;
+  border-radius: .3rem;
+  font-size: 1rem;
+  transition: all .2s ease-in;
+  transition-property: color, border; }
+  button.btn-prems:hover {
+    border: 1px solid #09ac89;
+    color: #09ac89; }
+
+button.btn-white {
+  cursor: pointer;
+  border: none;
+  background: white;
+  color: #0CDCB0;
+  padding: .7rem 1.2rem;
+  border-radius: .3rem;
+  font-size: 1rem;
+  transition: all .2s ease-in;
+  transition-property: color, background; }
+  button.btn-white:hover {
+    color: white;
+    background: #0CDCB0; }
+
+.header {
+  position: relative; }
+
+.header-title-container {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  margin-left: 2rem;
+  width: 65%;
+  margin-top: 4rem; }
+  .header-title-container .header-over-title {
+    font-size: .9rem; }
+  .header-title-container .header-title {
+    z-index: 1;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px rgba(20, 20, 20, 0.1);
+    margin-bottom: 1.5rem; }
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 390px; }
+  .video-container .video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* The following will size the video to fit the full container. Not necessary, just nice.*/
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 0; }
+
+.video-overflow {
+  background: rgba(0, 0, 0, 0.3);
+  position: relative; }
+
+.header-title {
+  position: relative; }
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif; }
