@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 function NavMain() {
@@ -11,14 +11,16 @@ function NavMain() {
           <NavLink activeClassName="is-active" exact to="/home">
             <h1 className="nav-logo">There.</h1>
           </NavLink>
-          <NavLink activeClassName="is-active" className="nav-item" to="/articles">My trips</NavLink>
         </div>
-        {/* <NavLink activeClassName="is-active"  to="/articles">Disover</NavLink> */}
         <div className="nav-side">
+          <NavLink activeClassName="is-active" className="nav-item" to="/articles">Articles</NavLink>
+          <NavLink activeClassName="is-active" className="nav-item" to="/about">About</NavLink>
+          <NavLink activeClassName="is-active" className="nav-item" to="/vides">Videos</NavLink>
+
           <NavLink activeClassName="is-active" to="/signin">
-            <button className="btn-prems btn-nav">
+            <button className="btn-nav">
               My Account
-              {/* <FontAwesomeIcon icon="fa-angle-right" className="faAngleRight" /> */}
+              <FontAwesomeIcon icon="angle-right" className="arrow-btn" />
             </button>
           </NavLink>
           {/* <NavLink activeClassName="is-active" to="/profile"></NavLink><FontAwesomeIcon icon="user-circle" className="faHeart" /> */}

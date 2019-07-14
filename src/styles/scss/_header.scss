@@ -1,31 +1,40 @@
+
 .header {
   position: relative;
 
-
-
 }
 
-
 .header-title-container {
-  position: absolute;
   z-index: 1;
-  color: white;
-  margin-left: 2rem;
   width: 65%;
-  margin-top: 4rem;
-
   .header-over-title {
     font-size: .9rem;
+    text-transform: uppercase;
+    font-size: .7rem;
+    margin-left: .2rem;
+    color: $mediumGrey;
   }
 
   .header-title {
     z-index: 1;
-    color: white;
+    color: $green;
     font-size: 3rem;
-    text-shadow: 1px 1px 2px rgba(20, 20, 20, 0.1);
-    margin-bottom: 1.5rem;
+    font-weight: 100;
+    margin-bottom: .4rem;
   }
+}
 
+.page-title-container {
+  display: flex;
+  padding: 1.5rem 2rem 2rem 2rem ;
+  flex-direction: column;
+  .page-title {
+    color: $lightBlack;
+    font-size: 1rem;
+    font-weight: 400;
+    // color: $mediumGrey;
+    max-width: 70%;
+  }
 }
 
 .video-container {
@@ -33,7 +42,7 @@
   height: 100%;
   position: relative;
   overflow: hidden;
-  height: 390px;
+  height: 400px;
 
   .video {
     position: absolute;

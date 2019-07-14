@@ -10,7 +10,7 @@ button.btn-prems {
   border-radius: .3rem;
   font-size: 1rem;
   transition: all .2s ease-in;
-  transition-property:color, border;
+  transition-property: color, border;
 
   &:hover {
     border: 1px solid $darkGreen;
@@ -18,7 +18,7 @@ button.btn-prems {
   }
 }
 
-button.btn-white{
+button.btn-white {
   cursor: pointer;
   border: none;
   background: white;
@@ -27,11 +27,27 @@ button.btn-white{
   border-radius: .3rem;
   font-size: 1rem;
   transition: all .2s ease-in;
-  transition-property:color, background;
+  transition-property: color, background, border;
+  border: 1px solid $green;
 
   &:hover {
     color: white;
     background: $green;
+    border: 1px solid white;
   }
 
+}
+
+.btn-nav {
+  display: flex;
+  align-items: center;
+  color: $green;
+  cursor: pointer;
+  border: none;
+  font-size: .8rem;
+  .arrow-btn{
+    margin-left: .3rem;
+
+    font-size: .9rem;
+  }
 }

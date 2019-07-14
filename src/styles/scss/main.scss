@@ -5,13 +5,20 @@
 @import "./responsive.scss";
 @import "./buttons";
 @import "./header";
+@import "./footer";
+@import "./grid-articles";
 
 body {
-  margin:0;
+  margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
+}
 
-} 
 
-.app-container{
-  
+
+.big-cta-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 3rem;
+  background: $green;
 }
