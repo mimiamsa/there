@@ -45,9 +45,15 @@ button.btn-white {
   cursor: pointer;
   border: none;
   font-size: .8rem;
+  transition: all .2s ease-in;
+  transition-property: color;
   .arrow-btn{
     margin-left: .3rem;
-
+    margin-top: .1rem;
     font-size: .9rem;
+  }
+
+  &:hover {
+    color: $darkGreen;
   }
 }

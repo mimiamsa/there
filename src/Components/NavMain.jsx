@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import DropMenu from "./DropMenu";
 
 function NavMain() {
   return (
@@ -11,18 +11,18 @@ function NavMain() {
           <NavLink activeClassName="is-active" exact to="/home">
             <h1 className="nav-logo">There.</h1>
           </NavLink>
-        </div>
-        <div className="nav-side">
           <NavLink activeClassName="is-active" className="nav-item" to="/articles">Articles</NavLink>
           <NavLink activeClassName="is-active" className="nav-item" to="/about">About</NavLink>
-          <NavLink activeClassName="is-active" className="nav-item" to="/vides">Videos</NavLink>
-
-          <NavLink activeClassName="is-active" to="/signin">
+          <NavLink activeClassName="is-active" className="nav-item" to="/videos">Videos</NavLink>
+        </div>
+        <div className="nav-side">
+          <NavLink activeClassName="is-active" className="nav-item-link" to="/signin">
             <button className="btn-nav">
               My Account
               <FontAwesomeIcon icon="angle-right" className="arrow-btn" />
             </button>
           </NavLink>
+          <DropMenu />
           {/* <NavLink activeClassName="is-active" to="/profile"></NavLink><FontAwesomeIcon icon="user-circle" className="faHeart" /> */}
         </div>
 

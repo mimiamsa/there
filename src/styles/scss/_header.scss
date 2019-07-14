@@ -6,34 +6,32 @@
 
 .header-title-container {
   z-index: 1;
-  width: 65%;
+  width: 60%;
   .header-over-title {
     font-size: .9rem;
     text-transform: uppercase;
     font-size: .7rem;
     margin-left: .2rem;
-    color: $mediumGrey;
+    color: $green;
   }
-
   .header-title {
     z-index: 1;
-    color: $green;
+    color: $grey;
     font-size: 3rem;
     font-weight: 100;
-    margin-bottom: .4rem;
+    margin-bottom: .6rem;
   }
 }
 
 .page-title-container {
   display: flex;
-  padding: 1.5rem 2rem 2rem 2rem ;
+  padding: 2rem 2rem 2rem 2rem ;
   flex-direction: column;
   .page-title {
-    color: $lightBlack;
+    color: $grey;
     font-size: 1rem;
     font-weight: 400;
-    // color: $mediumGrey;
-    max-width: 70%;
+    width: 60%;
   }
 }
 
