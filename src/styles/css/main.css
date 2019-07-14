@@ -269,10 +269,11 @@ button.btn-white {
   .article-text .text {
     font-size: 1.25rem;
     line-height: 1.4; }
-  .article-text span.highlight {
+  .article-text .highlight {
     color: #0CDCB0;
     margin: 2rem 0;
-    font-size: 1.5rem; }
+    font-size: 1rem;
+    width: 50%; }
 
 body {
   margin: 0;
